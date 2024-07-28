@@ -1,0 +1,135 @@
+/* src/styles/globalMenus.css */
+
+/* Navbar genel stilleri */
+.navbar {
+  background-color: #2d8ab6; /* Navbar arka plan rengi */
+  padding: 10px 20px; /* Navbar iç boşlukları */
+  position: sticky; /* Navbarın sabit kalmasını sağlar */
+  top: 0; /* Navbarın sayfanın üst kısmına yapışmasını sağlar */
+  width: 100%; /* Navbar genişliği */
+  z-index: 1000; /* Z-index ile diğer içeriklerin üzerinde kalmasını sağlar */
+  display: flex; /* Flexbox ile içeriği hizalar */
+  align-items: center; /* İçeriği dikeyde ortalar */
+  text-decoration: none; /* Alt çizgiyi kaldırır */
+}
+
+main {
+  padding-top: 20px; /* Navbar ile içerik arasındaki boşluk */
+}
+
+/* Logo için stil */
+.navbar-logo img {
+  height: 120px; /* Logo yüksekliği */
+  margin-right: 20px; /* Logonun sağındaki boşluk */
+}
+
+/* Nav-list stilleri */
+.nav-list {
+  list-style: none; /* Liste işaretlerini kaldırır */
+  display: flex; /* Flexbox ile yatay hizalama sağlar */
+  gap: 20px; /* Liste öğeleri arasındaki boşluk */
+  padding: 0; /* Liste iç boşlukları sıfırlar */
+  margin: 0; /* Liste dış boşlukları sıfırlar */
+  align-items: center; /* Liste öğelerini dikeyde ortalar */
+  text-decoration: none; /* Alt çizgiyi kaldırır */
+}
+
+/* Nav-item genel stilleri */
+.nav-item {
+  color: #fff; /* Yazı rengi beyaz */
+  cursor: pointer; /* İmleç tipi */
+  padding: 10px 15px; /* İç boşluklar */
+  border-radius: 4px; /* Köşe yuvarlatma */
+  transition: background-color 0.3s, color 0.3s; /* Geçiş efektleri */
+  position: relative; /* Dropdown menü için relative konum */
+  text-decoration: none; /* Alt çizgiyi kaldırır */
+}
+
+/* Dropdown menü stilleri */
+.dropdown-menu {
+  display: none; /* Dropdown menüyü gizler */
+  position: absolute; /* Dropdown menüyü konumlandırır */
+  background-color: #fff; /* Dropdown menü arka plan rengi */
+  list-style: none; /* Liste işaretlerini kaldırır */
+  padding: 10px 0; /* İç boşluklar */
+  margin: 0; /* Dış boşluklar */
+  border-radius: 4px; /* Köşe yuvarlatma */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+  z-index: 1000; /* Z-index ile diğer içeriklerin üzerinde kalmasını sağlar */
+  top: 100%; /* Üstten boşluk */
+  left: 0; /* Soldan boşluk */
+  min-width: 150px; /* Minimum genişlik */
+  text-decoration: none; /* Alt çizgiyi kaldırır */
+}
+
+/* Dropdown menü içindeki nav-item stilleri */
+.dropdown-menu .nav-item {
+  padding: 10px 20px; /* İç boşluklar */
+  color: #333; /* Yazı rengi */
+  text-decoration: none; /* Alt çizgiyi kaldırır */
+}
+
+/* Dropdown menü içindeki link stilleri */
+.dropdown-menu .nav-item a {
+  color: #333; /* Link yazı rengi */
+  text-decoration: none; /* Alt çizgiyi kaldırır */
+}
+
+/* Dropdown menü hover ve aktif durumları */
+.dropdown-menu .nav-item:hover {
+  background-color: #dbbf5c; /* Hover durumunda arka plan rengi */
+  text-decoration: none; /* Alt çizgiyi kaldırır */
+}
+
+/* Dropdown menü hover durumu */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block; /* Dropdown menüyü gösterir */
+  text-decoration: none; /* Alt çizgiyi kaldırır */
+}
+
+/* Alt dropdown menü stilleri */
+.dropdown-menu .dropdown-menu {
+  left: 100%; /* Soldan boşluk */
+  top: 0; /* Üstten boşluk */
+  margin-left: 1px; /* Soldan margin */
+  text-decoration: none; /* Alt çizgiyi kaldırır */
+}
+
+/* Hover ve aktif durumları */
+.nav-item:hover {
+  background-color: #dbbf5c; /* Hover durumunda arka plan rengi */
+  text-decoration: none; /* Alt çizgiyi kaldırır */
+}
+
+.nav-item a:hover,
+.nav-item .logout-link:hover {
+  color: #2d8ab6; /* Hover durumunda yazı rengi */
+  text-decoration: none; /* Alt çizgiyi kaldırır */
+}
+
+.nav-item.active {
+  background-color: #dbbf5c; /* Aktif durumda arka plan rengi */
+  text-decoration: none; /* Alt çizgiyi kaldırır */
+}
+
+/* Logout linki için stil */
+.nav-item .logout-link {
+  color: #fff; /* Logout link yazı rengi beyaz */
+  cursor: pointer; /* İmleç tipi */
+  text-decoration: none; /* Alt çizgiyi kaldırır */
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column; /* Ekran daraldığında listeyi dikey hizalar */
+    gap: 10px; /* Liste öğeleri arasındaki boşluk */
+  }
+}
+
+/* Font ve boyut ayarları */
+.nav-item {
+  font-family: 'Roboto', sans-serif; /* Yazı tipi */
+  font-size: 16px; /* Yazı boyutu */
+  text-decoration: none; /* Alt çizgiyi kaldırır */
+}

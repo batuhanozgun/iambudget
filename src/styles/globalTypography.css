@@ -1,0 +1,222 @@
+/* Global Typography Stilleri */
+
+/* Başlık stilleri */
+.h1 {
+  font-size: 28px; /* En büyük başlık yazı boyutu */
+  font-weight: 700; /* Kalın yazı tipi */
+  margin-bottom: 16px; /* Alt boşluk */
+  color: #2d8ab6; /* Yazı rengi */
+}
+
+.h2 {
+  font-size: 24px; /* Büyük başlık yazı boyutu */
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #2d8ab6;
+}
+
+.h3 {
+  font-size: 20px; /* Orta boy başlık yazı boyutu */
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: #2d8ab6;
+}
+
+.h4 {
+  font-size: 18px; /* Küçük başlık yazı boyutu */
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #2d8ab6;
+}
+
+.h5 {
+  font-size: 16px; /* En küçük başlık yazı boyutu */
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #2d8ab6;
+}
+
+.h6 {
+  font-size: 14px; /* Alt başlık yazı boyutu */
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #2d8ab6;
+}
+
+/* Metin stilleri */
+.p {
+  font-size: 14px; /* Paragraf metin boyutu */
+  line-height: 1.5; /* Satır yüksekliği */
+  margin-bottom: 12px; /* Alt boşluk */
+  color: #2d8ab6; /* Yazı rengi */
+}
+
+.small-text {
+  font-size: 12px; /* Küçük metin boyutu */
+  color: #2d8ab6;
+}
+
+.text-bold {
+  font-weight: 700; /* Kalın yazı tipi */
+}
+
+.text-italic {
+  font-style: italic; /* İtalik yazı tipi */
+}
+
+.text-underline {
+  text-decoration: underline; /* Altı çizili yazı tipi */
+}
+
+.text-primary {
+  color: #007bff; /* Birincil renk metin stili */
+}
+
+.text-secondary {
+  color: #6c757d; /* İkincil renk metin stili */
+}
+
+.text-success {
+  color: #28a745; /* Başarı metin stili */
+}
+
+.text-danger {
+  color: #dc3545; /* Tehlike metin stili */
+}
+
+.text-warning {
+  color: #ffc107; /* Uyarı metin stili */
+}
+
+.text-info {
+  color: #17a2b8; /* Bilgi metin stili */
+}
+
+.text-light {
+  color: #f8f9fa; /* Açık metin stili */
+}
+
+.text-dark {
+  color: #343a40; /* Koyu metin stili */
+}
+
+.text-white {
+  color: #fff; /* Beyaz metin stili */
+}
+
+.text-left {
+  text-align: left; /* Sol hizalı metin */
+}
+
+.text-center {
+  text-align: center; /* Ortalanmış metin */
+}
+
+.text-right {
+  text-align: right; /* Sağ hizalı metin */
+}
+
+.text-large {
+  font-size: 18px; /* Büyük metin boyutu */
+}
+
+.text-small {
+  font-size: 10px; /* Küçük metin boyutu */
+}
+
+/* Link stilleri */
+.a {
+  color: #2d8ab6; /* Link rengi */
+  text-decoration: none; /* Alt çizgi yok */
+}
+
+.a:hover {
+  text-decoration: underline; /* Üzerine gelindiğinde alt çizgi */
+}
+
+/* Form stilleri */
+.form-label {
+  font-size: 14px; /* Form etiketi yazı boyutu */
+  font-weight: bold; /* Kalın yazı tipi */
+  color: #2d8ab6; /* Yazı rengi */
+  display: block; /* Blok olarak göster */
+  margin-bottom: 0.5em; /* Alt boşluk */
+}
+
+.form-header {
+  font-size: 24px; /* Form başlığı yazı boyutu */
+  font-weight: bold; /* Kalın yazı tipi */
+  margin-bottom: 10px; /* Alt boşluk */
+  color: #2d8ab6; /* Yazı rengi */
+  text-align: center; /* Ortalanmış metin */
+  
+}
+
+.form-description {
+  font-size: 14px; /* Form açıklama metni yazı boyutu */
+  color: #777; /* Yazı rengi */
+  margin-bottom: 20px; /* Alt boşluk */
+  text-align: center; /* Ortalanmış metin */
+}
+
+.form-input,
+.form-textarea,
+.form-select,
+.form-radio-group label,
+.form-checkbox-group label {
+  font-size: 12px; /* Form giriş elemanları yazı boyutu */
+  color: #333; /* Yazı rengi */
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Placeholder stili */
+::placeholder {
+  font-size: 12px; /* Placeholder metin boyutu */
+  color: #888; /* Placeholder metin rengi */
+}
+
+/* Tablo hücresi stili */
+.table-head .table-cell {
+  font-size: 12px; /* Tablo başık hücresi yazı boyutu */
+  color: rgb(255, 255, 255); /* Başlık yazı rengi */
+}
+
+.table-cell {
+  font-size: 12px; /* Tablo hücresi yazı boyutu */
+  color: #333; /* Yazı rengi */
+}
+
+.table-cell.text-center {
+  text-align: center; /* Ortalanmış metin */
+}
+
+.table-cell.text-right {
+  text-align: right; /* Sağ hizalı metin */
+}
+
+.table-cell.text-bold {
+  font-weight: bold; /* Kalın yazı tipi */
+}
+
+.table-cell.text-italic {
+  font-style: italic; /* İtalik yazı tipi */
+}
+
+/* Buton metin stili */
+.btn-text {
+  font-size: 19px; /* Buton yazı boyutu */
+  color: #fff; /* Yazı rengi */
+}
+
+.btn-small-text {
+  font-size: 10px; /* Küçük buton yazı boyutu */
+  color: #fff; /* Yazı rengi */
+}
+
+
+/* List item stili */
+.list-item {
+  font-size: 12px; /* Yazı boyutu */
+  color: #2d8ab6; /* Yazı rengi */
+  margin-bottom: 5px; /* Alt boşluk */
+}

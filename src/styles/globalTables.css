@@ -1,0 +1,107 @@
+/* src/styles/globalTables.css */
+
+/* Genel Tablo Stilleri */
+.table {
+  width: 100%; /* Tam genişlik */
+  border-collapse: collapse; /* Kenarlıkların birleştirilmesi */
+  margin-bottom: 20px; /* Alt boşluk */
+  font-family: Arial, sans-serif; /* Yazı tipi */
+  position: relative; /* Pozisyon ayarı */
+}
+
+/* Tablo Başlık Stili */
+.table-head {
+  background-color: #f1f1f1; /* Arka plan rengi */
+  font-weight: bold; /* Kalın yazı tipi */
+}
+
+/* Tablo Satır Stili */
+.table-row:nth-child(even) {
+  background-color: #f9f9f9; /* Alternatif satır rengi */
+}
+
+.table-row:hover {
+  background-color: #e2e2e2; /* Hover durumunda satır rengi */
+}
+
+/* Tablo Hücre Stili */
+.table-cell {
+  padding: 5px; /* İç boşluk */
+  border: 0px solid #ddd; /* Kenarlık */
+  text-align: left; /* Metin hizalaması */
+  vertical-align: middle; /* Dikey hizalama */
+  height: 15px; /* Hücre yüksekliği, ihtiyacınıza göre ayarlayın */
+}
+
+/* Tablo Başlık Hücresi Stili */
+.table-head .table-cell {
+  background-color: #2d8ab6; /* Başlık arka plan rengi */
+  text-align: left; /* Başlık metin hizalaması */
+  height: 15px; /* Başlık hücresi yüksekliği, ihtiyacınıza göre ayarlayın */
+  padding: 5px; /* İç boşluk */
+}
+
+/* Tablo Kenarlık Rengi */
+.table-cell.border-primary {
+  border-color: #007bff; /* Birincil kenarlık rengi */
+}
+
+.table-cell.border-secondary {
+  border-color: #6c757d; /* İkincil kenarlık rengi */
+}
+
+.table-cell.border-success {
+  border-color: #28a745; /* Başarı kenarlık rengi */
+}
+
+.table-cell.border-danger {
+  border-color: #dc3545; /* Tehlike kenarlık rengi */
+}
+
+.table-cell.border-warning {
+  border-color: #ffc107; /* Uyarı kenarlık rengi */
+}
+
+.table-cell.border-info {
+  border-color: #17a2b8; /* Bilgi kenarlık rengi */
+}
+
+/* Tablo Hücrelerinin Arka Plan Rengi */
+.table-cell.bg-primary {
+  background-color: #007bff; /* Birincil arka plan rengi */
+  color: white; /* Yazı rengi */
+}
+
+.table-cell.bg-secondary {
+  background-color: #6c757d; /* İkincil arka plan rengi */
+  color: white; /* Yazı rengi */
+}
+
+.table-cell.bg-success {
+  background-color: #28a745; /* Başarı arka plan rengi */
+  color: white; /* Yazı rengi */
+}
+
+.table-cell.bg-danger {
+  background-color: #dc3545; /* Tehlike arka plan rengi */
+  color: white; /* Yazı rengi */
+}
+
+.table-cell.bg-warning {
+  background-color: #ffc107; /* Uyarı arka plan rengi */
+  color: #343a40; /* Yazı rengi */
+}
+
+.table-cell.bg-info {
+  background-color: #17a2b8; /* Bilgi arka plan rengi */
+  color: white; /* Yazı rengi */
+}
+
+/* Tablo Hücrelerinin Yüksekliği */
+.table-cell.height-small {
+  height: 15px; /* Küçük hücre yüksekliği */
+}
+
+.table-cell.height-large {
+  height: 60px; /* Büyük hücre yüksekliği */
+}

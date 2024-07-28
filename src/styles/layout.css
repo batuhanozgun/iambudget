@@ -1,0 +1,32 @@
+/* src/styles/layout.css */
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .navbar {
+    background-color: #333;
+    padding: 10px 20px;
+  }
+  
+  .navbar .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar .nav-item {
+    color: #fff;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+    margin-top: 60px; /* Adjust according to the height of your navbar */
+  }
+  
+  .authenticated-landing-page {
+    text-align: center;
+  }
+  

@@ -1,0 +1,138 @@
+/* Genel buton stilleri */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+/* Küçük buton stili */
+.btn-small {
+  padding: 5px 10px;
+  font-size: 10px;
+}
+
+/* Birincil buton stili */
+.btn-primary {
+  background-color: #dbbf5c;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #af9534;
+}
+
+/* İkincil buton stili */
+.btn-secondary {
+  background-color: #2d8ab6;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #16719b;
+}
+
+/* Tehlike butonu stili */
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #bd2130;
+}
+
+/* Başarı butonu stili */
+.btn-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+/* Çerçeveli buton stili */
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid currentColor;
+  color: currentColor;
+}
+
+.btn-outline:hover {
+  background-color: currentColor;
+  color: white;
+}
+
+/* Çerçeveli birincil buton stili */
+.btn-outline-primary {
+  color: #dbbf5c;
+  border-color: #dbbf5c;
+}
+
+.btn-outline-primary:hover {
+  background-color: #dbbf5c;
+  color: white;
+}
+
+/* Çerçeveli ikincil buton stili */
+.btn-outline-secondary {
+  color: #2d8ab6;
+  border-color: #2d8ab6;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #2d8ab6;
+  color: white;
+}
+
+/* Çerçeveli tehlike butonu stili */
+.btn-outline-danger {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Çerçeveli başarı butonu stili */
+.btn-outline-success {
+  color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-outline-success:hover {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Form butonları */
+.form-button {
+  padding: 10px 20px; /* İç boşluk */
+  border: none; /* Kenarlık yok */
+  border-radius: 4px; /* Köşe yuvarlatma */
+  background-color: #007bff; /* Arka plan rengi */
+  color: white; /* Yazı rengi */
+  font-size: 14px; /* Yazı boyutu */
+  cursor: pointer; /* İmleç tipi */
+}
+
+.form-button:hover {
+  background-color: #0056b3; /* Hover durumu için arka plan rengi */
+}
+
+/* Aksiyon Düğmeleri Grubu Stili */
+.button-group {
+  position: absolute; /* Mutlak pozisyon */
+  right: 10px; /* Sağdan boşluk */
+  display: flex; /* Flexbox düzeni */
+  gap: 5px; /* Düğmeler arası boşluk */
+  transform: translateY(-35%); /* Yarı yükseklikte ortalama */
+}

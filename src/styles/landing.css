@@ -1,0 +1,154 @@
+/* src/styles/landing.css */
+
+/* Tarayıcı varsayılan stilini sıfırlama */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HTML ve gövde elementlerinin tam genişlik ve yüksekliği kaplaması */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* Ana iniş sayfası stili */
+.landing-page {
+  display: flex;
+  flex-direction: column; /* Dikey yönde hizalama */
+  justify-content: space-between; /* İçerikleri dikeyde yay */
+  height: 100vh; /* Tam ekran yüksekliği */
+  background-image: url('../assets/background.jpeg'); /* Arka plan resmi */
+  backdrop-filter: blur(25px); 
+  background-size: cover; /* Resmi kapsayacak şekilde ayarla */
+  background-position: center; /* Ortaya hizala */
+  background-repeat: no-repeat; /* Resmi tekrarlama */
+}
+
+/* İçerik sarma alanı stili */
+.content-wrapper {
+  display: flex;
+  justify-content: space-between; /* Yatayda yay */
+  width: 80%; /* Genişlik yüzde 80 */
+  margin: 220px auto; /* Üst ve alt margin 20px, ortalamak için margin */
+  padding: 20px; /* İç boşluk */
+  flex: 0,5; /* Yüksekliği esnek */
+}
+
+/* Sol içerik alanı stili */
+.left-content {
+  width: 45%; /* Genişlik yüzde 45 */
+  padding: 20px; /* İç boşluk */
+  color: white; /* Metin rengi beyaz */
+  backdrop-filter: blur(25px); /* Sadece arka plana bulanıklık uygula */
+}
+
+/* Sağ içerik alanı stili */
+.right-content {
+  width: 45%; /* Genişlik yüzde 45 */
+  padding: 20px; /* İç boşluk */
+  background-color: rgba(255, 255, 255, 0.8); /* Şeffaf beyaz arka plan */
+  border-radius: 10px; /* Köşe yuvarlatma */
+  backdrop-filter: blur(5px); /* Sadece arka plana bulanıklık uygula */
+  min-height: 300px; /* Minimum yükseklik */
+  display:flex; /* Esnek kutu modeli */
+  flex-direction: column; /* Dikey hizalama */
+  justify-content: center; /* Ortala */
+}
+
+/* Başlık stili */
+h1 {
+  font-size: 36px; /* Yazı boyutu */
+  margin-bottom: 20px; /* Alt boşluk */
+}
+
+/* Paragraf ve liste elemanları stili */
+p, li {
+  font-size: 18px; /* Yazı boyutu */
+  margin-bottom: 10px; /* Alt boşluk */
+}
+
+/* Form başlığı stili */
+.right-content h2 {
+  margin-bottom: 20px; /* Form başlığı alt boşluk */
+}
+
+/* Form stili */
+form {
+  display: flex;
+  flex-direction: column; /* Dikey hizalama */
+  margin-bottom: 20px; /* Form ve form başlığı arasında boşluk */
+}
+
+/* Giriş alanları ve buton stili */
+input, button {
+  margin-bottom: 10px; /* Alt boşluk */
+}
+
+/* Alt bar stili */
+.footer-bar, .header-bar {
+  width: 100%; /* Tam genişlik */
+  padding: 10px 0; /* Dikey iç boşluk */
+  background-color: rgba(0, 0, 0, 0.7); /* Şeffaf siyah arka plan */
+  text-align: center; /* Ortala */
+  color: white; /* Metin rengi beyaz */
+  position: fixed; /* Sabit pozisyon */
+  left: 0; /* Sol hizalama */
+  z-index: 100; /* Üstte görünme */
+}
+
+/* Üst barın konumu */
+.header-bar {
+  top: 0; /* Üst hizalama */
+}
+
+/* Alt barın konumu */
+.footer-bar {
+  bottom: 0; /* Alt hizalama */
+}
+
+/* Alt bar bağlantı stili */
+.footer-bar a {
+  color: white; /* Bağlantı rengi beyaz */
+  margin: 0 10px; /* Yatayda boşluk */
+  text-decoration: none; /* Alt çizgi yok */
+}
+
+/* Alt bar bağlantı hover stili */
+.footer-bar a:hover {
+  text-decoration: underline; /* Üzerine gelindiğinde alt çizgi */
+}
+
+/* Tıklanabilir metin stili */
+.form-switch {
+  color: #2d8ab6; /* Bağlantı rengi */
+  cursor: pointer; /* Tıklanabilir imleç */
+  text-decoration: none; /* Alt çizgi yok */
+  margin-top: 5px; /* Üst boşluk */
+  font-size: 12px;
+  
+}
+
+.form-switch:hover {
+  text-decoration: underline; /* Üzerine gelindiğinde alt çizgi */
+}
+
+.header-bar {
+  background-color: rgba(255, 255, 255, 0.9); /* Şeffaf beyaz arka plan */
+  padding: 1px 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Ortaya hizala */
+}
+
+.header-bar .logo {
+  height: 150px; /* Logonun yüksekliği */
+}
+
+.form-switch {
+  color: #2d8ab6; /* Link rengi */
+  cursor: pointer; /* İmleç tipi */
+  margin-top: 5px; /* Üstten boşluk */
+  text-decoration: underline; /* Alt çizgi */
+}

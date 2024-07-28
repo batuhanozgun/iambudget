@@ -1,0 +1,75 @@
+/* src/styles/globalForms.css */
+
+/* Genel form stilleri */
+.form-group {
+  margin-bottom: 15px; /* Grup elemanları arasındaki boşluk */
+}
+
+.form-input,
+.form-textarea,
+.form-select {
+  width: calc(100% - 20px); /* Tam genişlik, iç boşlukları hesaplayarak */
+  padding: 10px; /* İç boşluk */
+  border: 1px solid #ccc; /* Kenarlık */
+  border-radius: 4px; /* Köşe yuvarlatma */
+  box-sizing: border-box; /* Kenarlık ve iç boşlukları genişlik hesaplamasına dahil et */
+  font-size: 14px; /* Yazı boyutu */
+  color: #333; /* Yazı rengi */
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+  border-color: #007bff; /* Odaklanma durumunda kenarlık rengi */
+  outline: none; /* Varsayılan odak çizgisini kaldır */
+}
+
+.form-textarea {
+  resize: vertical; /* Yalnızca dikey boyutlandırma */
+}
+
+.form-radio-group,
+.form-checkbox-group {
+  display: flex; /* Esnek kutu modeli */
+  align-items: center; /* Elemanları dikeyde ortalar */
+  margin-bottom: 1px; /* Alt boşluk */
+  justify-content: center; /* Elemanları yatayda ortala */
+  margin-right: 10px; /* Sağ boşluk */
+}
+
+.form-radio,
+.form-checkbox {
+  margin-right: 10px; /* Sağ boşluk */
+}
+
+.form-option-group {
+  padding: 10px; /* İç boşluk */
+  border: 1px solid #ccc; /* Kenarlık */
+  border-radius: 4px; /* Köşe yuvarlatma */
+  background-color: #fff; /* Arka plan rengi */
+  display: inline-flex; /* Esnek kutu modeli */
+  justify-content: center; /* Elemanları yatayda ortala */
+  align-items: center; /* Elemanları dikeyde ortalar */
+}
+
+.form-button {
+  padding: 10px 20px; /* İç boşluk */
+  border: none; /* Kenarlık yok */
+  border-radius: 4px; /* Köşe yuvarlatma */
+  background-color: #007bff; /* Arka plan rengi */
+  color: white; /* Yazı rengi */
+  font-size: 14px; /* Yazı boyutu */
+  cursor: pointer; /* İmleç tipi */
+}
+
+.form-button:hover {
+  background-color: #0056b3; /* Hover durumu için arka plan rengi */
+}
+
+.form-switch {
+  cursor: pointer;
+  color: #007bff; /* Renk */
+  text-decoration: underline; /* Alt çizgi */
+  margin-top: 10px; /* Üst boşluk */
+  display: block; /* Blok olarak göster */
+}

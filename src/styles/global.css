@@ -1,0 +1,13 @@
+/* src/styles/global.css */
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+
+  body, html {
+    font-family: 'Roboto', sans-serif;
+  }

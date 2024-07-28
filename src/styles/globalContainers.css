@@ -1,0 +1,23 @@
+/* Dış form konteyneri stili */
+.form-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #2d8ab6;
+  border-radius: 10px;
+  background-color: #fdfdfd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* İç form konteyneri stili */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #2d8ab6;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+  text-align: center;
+}

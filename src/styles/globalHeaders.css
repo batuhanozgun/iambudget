@@ -1,0 +1,38 @@
+/* src/styles/globalHeaders.css */
+header, .reference-header {
+    background-color: #282c34;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Üst üste binmeyi önlemek için */
+  }
+  
+  .header-section {
+    margin: 5px 0;
+  }
+  
+  .header-section nav ul, .reference-header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .header-section nav ul li, .reference-header nav ul li {
+    display: inline;
+    margin-right: 10px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .header-section nav ul li a, .reference-header nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .header-section nav ul li.selected, .header-section nav ul li a.selected {
+    text-decoration: underline;
+  }
+  
